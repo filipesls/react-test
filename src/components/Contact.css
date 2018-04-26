@@ -1,0 +1,38 @@
+/* Item List */
+.app-itemList-container{ display: inline-block; width: 100%;}
+.app-itemList-info h3{ font-size: 20px; line-height: 20px; margin-bottom: 10px;}
+.app-itemList-info .app-itemList-company{ color: #777;}
+.app-itemList-info .app-itemList-company .text{ font-size: 16px; line-height: 20px;}
+.app-itemList-info .app-itemList-company .icon{ margin-right: 5px; width: 15px;}
+.app-itemList-info{ display: block; float: left; width: 80%;}
+.app-itemList-img{ display: block; float: right; text-align: right; width: 20%;}
+.app-itemList-img img{ margin: 0; vertical-align: middle; width: 50px;}
+
+
+
+/* Modal */
+.display-block { display: block; }
+.display-none { display: none; }
+
+.app-modal { position: fixed; top: 0; left: 0; width:100%; height: 100%; background: rgba(0, 0, 0, 0.8);}
+.app-modal-content{ margin:auto; margin-top: -255px; top:50%; background-color:#fff; position:relative; padding:0; outline:0; width:400px; box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19); }
+.app-header-footer{ padding-top:15px!important; padding-bottom:15px!important; color:#000!important; background-color:#f1f1f1!important; }
+.app-body{ height: 400px; }
+.app-container{ padding:10px 20px; }
+.app-container:after,.app-container:before{ content:""; display:table; clear:both; }
+
+.app-animate-zoom { animation:animatezoom 0.6s; }
+@keyframes animatezoom{ from{ transform:scale(0); } to{ transform:scale(1); } }
+
+.app-img{ border-radius:50%;  margin: 20px 0 10px;  width:25%; ; }
+.app-display-topright{ position:absolute; right:0; top:0; }
+.app-border-top{ border-top:1px solid #ccc!important; }
+.app-border-bottom{ border-bottom:1px solid #ccc!important; }
+
+.personal-modal-info{ color: #777; margin: 5px 0 15px; }
+.personal-modal-info label{ display: inline-block; font-weight: bold; margin-right: 10px; text-align: right; width: 100px; }
+
+.app-button{ border:none; display:inline-block; padding:8px 16px; vertical-align:middle; overflow:hidden; text-decoration:none; color:inherit; background-color:inherit; text-align:center; cursor:pointer; white-space:nowrap; }
+.app-button{ -webkit-touch-callout:none; -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; }   
+.app-button:hover{ color:#000!important; background-color:#ccc!important; }
+.app-button-default{ background-color: #fff; border: 1px solid #999; }

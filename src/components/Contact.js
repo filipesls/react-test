@@ -24,7 +24,7 @@ class Contact extends Component {
           <h3>{this.props.name}</h3>
           <div className="app-itemList-company">
             <img src={icon_building} className="icon" alt="logo" />
-            <span className="text">{this.props.company}</span>
+            <span className="text">{this.props.organization}</span>
           </div>
         </div>
         <div className="app-itemList-img">
@@ -33,8 +33,9 @@ class Contact extends Component {
 
         <Modal show={this.state.isOpen} onClose={this.toggleModal} name={this.props.name} phone={this.props.phone} >
           <p className="personal-modal-info"><label>Email:</label> {this.props.email}</p>
-          <p className="personal-modal-info"><label>Company:</label> {this.props.company}</p>
-          <p className="personal-modal-info"><label>Street:</label> {this.props.street}</p>
+          <p className="personal-modal-info"><label>Organization:</label> {this.props.organization}</p>
+          <p className="personal-modal-info"><label>Assistant:</label> {this.props.assistant}</p>
+          <p className="personal-modal-info"><label>Group:</label> {this.props.group}</p>
         </Modal>
       </div>
     );

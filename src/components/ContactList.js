@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import PropTypes from "prop-types";
 import "./ContactList.css";
 
@@ -62,7 +63,9 @@ class ContactList extends Component {
               draggable='true'
               onDragEnd={this.dragEnd.bind(this)}
               onDragStart={this.dragStart.bind(this)}>
-              <Contact key={item.id} dataid={i} name={item.name} email={item.email} phone={item.phone} company={item.company} street={item.street} />
+
+              <Contact key={item.id} dataid={i} name={item.name} phone={item.phone} email={item.email} organization={item.organization} assistant={item.assistant} group={item.group} />
+
             </li>
           )}
         </ul>
